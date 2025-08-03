@@ -1,6 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-
 using System;
 class Program
 {
@@ -15,7 +12,37 @@ class Program
 
         int opcion = int.Parse(Console.ReadLine());
         // TODO: Implementar la lógica de menú
+        if (opcion == 1)
+        {
+        }
+        if (opcion == 2)
+        {
+        }
+        if (opcion == 3)
+        {
+        }
+        if (opcion == 4)
+        {
+        Console.Write("Ingrese el primer numero: ");
+        double num1 = double.Parse(Console.ReadLine());
+        Console.Write("Ingrese el segundo numero: ");
+        double num2 = double.Parse(Console.ReadLine());
+        int resultado = Division(num1, num2);
+        Console.WriteLine("El resultado de la division es: " + Division);   
+        }
     }
 
     // TODO: Implementar funciones de suma, resta, multiplicación, división
+    //DIVISION
+    static double Division(double a, double b)
+    {
+        if (b==0)
+        {
+            Console.WriteLine("No se puede dividir entre 0");
+        }
+        else
+        {
+            return a / b;   
+        }
+    }
 }
