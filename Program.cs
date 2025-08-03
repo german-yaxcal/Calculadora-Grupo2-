@@ -17,7 +17,14 @@ class Program
         }
         if (opcion == 2)
         {
+        Console.Write("Ingrese el primer numero: ");
+        double num1 = double.Parse(Console.ReadLine());
+        Console.Write("Ingrese el segundo numero: ");
+        double num2 = double.Parse(Console.ReadLine());
+        int resultado = Resta(num1, num2);
+        Console.WriteLine("El resultado de la resta es: " + Resta);   
         }
+        
         if (opcion == 3)
         {
         }
@@ -33,6 +40,12 @@ class Program
     }
 
     // TODO: Implementar funciones de suma, resta, multiplicación, división
+    //RESTA
+    static double Resta(double a, double b)
+    {
+        return a - b;
+    }
+    
     //DIVISION
     static double Division(double a, double b)
     {
