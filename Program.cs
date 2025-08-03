@@ -13,15 +13,23 @@ class Program
         int opcion = int.Parse(Console.ReadLine());
         // TODO: Implementar la lógica de menú
         if (opcion == 1)
+            
         {
+         Console.Write("Ingrese el primer numero: ");
+        double num1 = double.Parse(Console.ReadLine());
+        Console.Write("Ingrese el segundo numero: ");
+        double num2 = double.Parse(Console.ReadLine());
+        double resultado = Suma(num1, num2);
+        Console.WriteLine("El resultado de la suma es: " + resultado);
         }
+        
         if (opcion == 2)
         {
         Console.Write("Ingrese el primer numero: ");
         double num1 = double.Parse(Console.ReadLine());
         Console.Write("Ingrese el segundo numero: ");
         double num2 = double.Parse(Console.ReadLine());
-        int resultado = Resta(num1, num2);
+        double resultado = Resta(num1, num2);
         Console.WriteLine("El resultado de la resta es: " + resultado);   
         }
         
@@ -31,7 +39,7 @@ class Program
         double num1 = double.Parse(Console.ReadLine());
         Console.Write("Ingrese el segundo numero: ");
         double num2 = double.Parse(Console.ReadLine());
-        int resultado = Multi(num1, num2);
+        double resultado = Multi(num1, num2);
         Console.WriteLine("El resultado de la multiplicacion es: " + resultado);    
         }
         
@@ -41,12 +49,19 @@ class Program
         double num1 = double.Parse(Console.ReadLine());
         Console.Write("Ingrese el segundo numero: ");
         double num2 = double.Parse(Console.ReadLine());
-        int resultado = Division(num1, num2);
+        double resultado = Division(num1, num2);
         Console.WriteLine("El resultado de la division es: " + resultado);   
         }
     }
 
     // TODO: Implementar funciones de suma, resta, multiplicación, división
+    
+    //SUMA
+    static double Suma(double a, double b)
+    {
+        return a + b;
+    }
+    
     //RESTA
     static double Resta(double a, double b)
     {
