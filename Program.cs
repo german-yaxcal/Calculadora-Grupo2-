@@ -22,12 +22,19 @@ class Program
         Console.Write("Ingrese el segundo numero: ");
         double num2 = double.Parse(Console.ReadLine());
         int resultado = Resta(num1, num2);
-        Console.WriteLine("El resultado de la resta es: " + Resta);   
+        Console.WriteLine("El resultado de la resta es: " + resultado);   
         }
         
         if (opcion == 3)
         {
+        Console.Write("Ingrese el primer numero: ");
+        double num1 = double.Parse(Console.ReadLine());
+        Console.Write("Ingrese el segundo numero: ");
+        double num2 = double.Parse(Console.ReadLine());
+        int resultado = Multi(num1, num2);
+        Console.WriteLine("El resultado de la multiplicacion es: " + resultado);    
         }
+        
         if (opcion == 4)
         {
         Console.Write("Ingrese el primer numero: ");
@@ -35,7 +42,7 @@ class Program
         Console.Write("Ingrese el segundo numero: ");
         double num2 = double.Parse(Console.ReadLine());
         int resultado = Division(num1, num2);
-        Console.WriteLine("El resultado de la division es: " + Division);   
+        Console.WriteLine("El resultado de la division es: " + resultado);   
         }
     }
 
@@ -44,6 +51,12 @@ class Program
     static double Resta(double a, double b)
     {
         return a - b;
+    }
+    
+    //MULTIPLICACION
+    static double Multi(double a, double b)
+    {
+        return a * b;
     }
     
     //DIVISION
